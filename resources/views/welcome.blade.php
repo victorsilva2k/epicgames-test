@@ -11,9 +11,8 @@
     <title>Dashboard Template · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-
     
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
 <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -29,6 +28,56 @@
 
 
     <style>
+
+        .bi {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        }
+
+        /*
+        * Sidebar
+        */
+
+        @media (min-width: 768px) {
+        .sidebar .offcanvas-lg {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 48px;
+        }
+        .navbar-search {
+            display: block;
+        }
+        }
+
+        .sidebar .nav-link {
+        font-size: .875rem;
+        font-weight: 500;
+        }
+
+        .sidebar .nav-link.active {
+        color: #2470dc;
+        }
+
+        .sidebar-heading {
+        font-size: .75rem;
+        }
+
+        /*
+        * Navbar
+        */
+
+        .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+        }
+
+        .navbar .form-control {
+        padding: .75rem 1rem;
+        }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -111,6 +160,7 @@
     <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="resources\css\dashboard.csss" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Custom styles for this template -->
