@@ -346,6 +346,7 @@
                           </div>
                         </div>
                       </div>
+                      
                       <div class="carousel-item">
                         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
                         <div class="container">
@@ -392,28 +393,8 @@
                   </div>
                   <h2 class="h2">TOP 3 - Statistics of last 7 days in this platform </h2>
                   <div class="container">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="..." class="rounded float-start" alt="...">
-                      </div>
-                      <div class="col-lg-4">
-                        <ul class="list-group">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                          <li class="list-group-item">A fourth item</li>
-                          <li class="list-group-item">And a fifth one</li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-4">
-                        <ul class="list-group">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                          <li class="list-group-item">A fourth item</li>
-                          <li class="list-group-item">And a fifth one</li>
-                        </ul>
-                      </div>
+                    <div class="row container">
+
                     </div>
                   </div>
                 </main>
