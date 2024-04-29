@@ -364,7 +364,7 @@
                   </div>
                   {{-- END CAROUSEL --}}
             
-                  <div class="d-flex gap-2 justify-content-center py-5">
+                  <div class="d-flex gap-2 justify-content-left py-5">
                     <button class="btn btn-light  px-3" type="button">All Games</button>
                     <button class="btn btn-dark  px-3" type="button">Action</button>
                     <button class="btn btn-dark  px-3" type="button">Sports</button>
@@ -379,7 +379,7 @@
                     <h1 class="h1">
                         Game Statistics
                     </h1>
-                    <div class="d-flex gap-2 justify-content-center py-5">
+                    <div class="d-flex gap-2 justify-content-left py-5">
                         <button class="btn btn-light  px-3" type="button">All Games</button>
                         <button class="btn btn-dark  px-3" type="button">Most Played</button>
                         <button class="btn btn-dark  px-3" type="button">Sports</button>
