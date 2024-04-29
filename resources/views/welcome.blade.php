@@ -104,6 +104,7 @@
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  background: url("fortnite-personazh-fentezi-fon.png");
 }
 
 
@@ -172,6 +173,201 @@
     <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>
+    <header class="p-3 mb-0 border-bottom .bg-dark-subtle">
+        <div class="container text-center">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start row">
+            <div class="col">
+                {{-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a> --}}
+            
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center text-secondary mb-md-0">
+                <li><a href="#" class="nav-link text-secondary px-2 link-secondary">Overview</a></li>
+                <li><a href="#" class="nav-link text-secondary px-2 link-body-emphasis">Inventory</a></li>
+                <li><a href="#" class="nav-link text-secondary px-2 link-body-emphasis">Customers</a></li>
+                <li><a href="#" class="nav-link text-secondary px-2 link-body-emphasis">Products</a></li>
+                </ul>
+            </div>    
+            <div class="col">
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+            
+            <div class="dropdown text-end col">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      {{-- DASHBOARD --}}
+      <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+                <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                            <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                            Dashboard
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#file-earmark"/></svg>
+                            Orders
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#cart"/></svg>
+                            Products
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#people"/></svg>
+                            Customers
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#graph-up"/></svg>
+                            Reports
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#puzzle"/></svg>
+                            Integrations
+                        </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                        <span>Saved reports</span>
+                        <a class="link-secondary" href="#" aria-label="Add a new report">
+                        <svg class="bi"><use xlink:href="#plus-circle"/></svg>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-auto">
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                            Current month
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                            Last quarter
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                            Social engagement
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
+                            Year-end sale
+                        </a>
+                        </li>
+                    </ul>
+
+                    <hr class="my-3">
+
+                    <ul class="nav flex-column mb-auto">
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
+                            Settings
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <svg class="bi"><use xlink:href="#door-closed"/></svg>
+                            Sign out
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                {{-- CAROUSEL --}}
+                <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                        <div class="container">
+                          <div class="carousel-caption text-start">
+                            <h1>Example headline.</h1>
+                            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                        <div class="container">
+                          <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                        <div class="container">
+                          <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  {{-- END CAROUSEL --}}
+            </main>
+            <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </div>
+        </div>
+        {{-- end dashboard --}}
     <main>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -275,189 +471,9 @@
   </symbol>
 </svg>
 
-<header class="p-3 mb-0 border-bottom .bg-dark-subtle">
-    <div class="container text-center">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start row">
-        <div class="col">
-            {{-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-            </a> --}}
+    
         
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center text-secondary mb-md-0">
-            <li><a href="#" class="nav-link text-secondary px-2 link-secondary">Overview</a></li>
-            <li><a href="#" class="nav-link text-secondary px-2 link-body-emphasis">Inventory</a></li>
-            <li><a href="#" class="nav-link text-secondary px-2 link-body-emphasis">Customers</a></li>
-            <li><a href="#" class="nav-link text-secondary px-2 link-body-emphasis">Products</a></li>
-            </ul>
-        </div>    
-        <div class="col">
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-            </form>
-        </div>
-        
-        <div class="dropdown text-end col">
-          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        
-        </div>
-        
-      </div>
-    </div>
-  </header>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
-      <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                <svg class="bi"><use xlink:href="#house-fill"/></svg>
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#file-earmark"/></svg>
-                Orders
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#cart"/></svg>
-                Products
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#people"/></svg>
-                Customers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#graph-up"/></svg>
-                Reports
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#puzzle"/></svg>
-                Integrations
-              </a>
-            </li>
-          </ul>
-
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-            <span>Saved reports</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-              <svg class="bi"><use xlink:href="#plus-circle"/></svg>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-auto">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                Current month
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                Last quarter
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                Social engagement
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                Year-end sale
-              </a>
-            </li>
-          </ul>
-
-          <hr class="my-3">
-
-          <ul class="nav flex-column mb-auto">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#gear-wide-connected"/></svg>
-                Settings
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#door-closed"/></svg>
-                Sign out
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>A NEW WORLD IS BORN</h1>
-
-            <p><a class="btn btn-lg btn-light" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-
-    </main>
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </div>
-</div>
-<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script><script src="dashboard.js"></script></body>
 </html>
