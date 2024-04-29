@@ -363,7 +363,30 @@
                     </button>
                   </div>
                   {{-- END CAROUSEL --}}
-            </main>
+            
+                  <div class="d-flex gap-2 justify-content-center py-5">
+                    <button class="btn btn-light  px-3" type="button">All Games</button>
+                    <button class="btn btn-dark  px-3" type="button">Action</button>
+                    <button class="btn btn-dark  px-3" type="button">Sports</button>
+                    <button class="btn btn-dark  px-3" type="button">Danger</button>
+                    <button class="btn btn-dark  px-3" type="button">Warning</button>
+                    <button class="btn btn-dark  px-3" type="button">Info</button>
+                    <button class="btn btn-dark  px-3" type="button">Light</button>
+                    <button class="btn btn-dark  px-3" type="button">Dark</button>
+                    <button class="btn btn-link  px-3" type="button">Link</button>
+                  </div>
+                  <div class="cont">
+                    <h1 class="h1">
+                        Game Statistics
+                    </h1>
+                    <div class="d-flex gap-2 justify-content-center py-5">
+                        <button class="btn btn-light  px-3" type="button">All Games</button>
+                        <button class="btn btn-dark  px-3" type="button">Action</button>
+                        <button class="btn btn-dark  px-3" type="button">Sports</button>
+                        <button class="btn btn-dark  px-3" type="button">Danger</button>
+                    
+                  </div>
+                </main>
             <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         </div>
         </div>
