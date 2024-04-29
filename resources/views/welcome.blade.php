@@ -13,6 +13,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
     
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
     
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -161,6 +163,49 @@
   }
 }
 
+      /* BLOG */
+
+      /* stylelint-disable @stylistic/selector-list-comma-newline-after */
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+
     </style>
 
     
@@ -177,9 +222,7 @@
         <div class="container text-center">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start row">
             <div class="col">
-                {{-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-                </a> --}}
+                
             
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center text-secondary mb-md-0">
                 <li><a href="#" class="nav-link text-secondary px-2 link-secondary">Overview</a></li>
@@ -387,6 +430,59 @@
                     
                   </div>
                   <h2 class="h2">TOP 3 - Statistics of last 7 days in this platform </h2>
+                  <div class="row mb-2">
+                    <div class="col-md-4">
+                      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                          <h3 class="mb-0">Featured post</h3>
+                          <div class="mb-1 text-body-secondary">Nov 12</div>
+                          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                          </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                          <h3 class="mb-0">Post title</h3>
+                          <div class="mb-1 text-body-secondary">Nov 11</div>
+                          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                          </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                          <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                            <h3 class="mb-0">Post title</h3>
+                            <div class="mb-1 text-body-secondary">Nov 11</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                              Continue reading
+                              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                            </a>
+                          </div>
+                          <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                 </main>
             <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         </div>
